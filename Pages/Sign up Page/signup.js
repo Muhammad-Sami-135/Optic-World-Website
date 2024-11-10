@@ -29,7 +29,7 @@ function signUp(){
         // Signed in 
         var user = userCredential.user;
         console.log(user);
-        window.location.href = "file:///C:/Users/Laptops%20vala/Desktop/Final%20Hackaton/Pages/Home%20Page/home.html"
+        window.location.href = "../Home Page/home.html"
         
       })
       .catch((error) => {
