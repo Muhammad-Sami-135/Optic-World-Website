@@ -71,7 +71,7 @@ function login() {
           // Save the email locally so you don't need to ask the user for it again
           // if they open the link on the same device.
           window.localStorage.setItem('emailForSignIn', email.value , password.value);
-          window.location.href = "file:///C:/Users/Laptops%20vala/Desktop/Final%20Hackaton/Pages/Home%20Page/home.html"
+          window.location.href = "./Pages/Home Page/home.html"
           // ...
       })
       .catch((error) => {
