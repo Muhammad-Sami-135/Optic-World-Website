@@ -11,6 +11,7 @@ var firebaseConfig = {
 // Initialize Firebase
 var app = firebase.initializeApp(firebaseConfig);
 
+var empty = document.getElementsByClassName("emptyinput")
 
 function sendMessage(){
 try {
@@ -18,24 +19,22 @@ try {
   var email = document.getElementById("useremail").value;
   var phone = document.getElementById("userphone").value;
   var message = document.getElementById("usermessage").value;
-  var empty = document.getElementsByClassName("emptyinput")
   
-  console.log(name);
-  console.log(email);
-  console.log(phone);
-  console.log(message);
-
+  console.log("User Name :" , name);
+  console.log("User Email :" , email);
+  console.log("User Phone :" , phone);
+  console.log("User Message :" , message);
+  
+  
   var userDetail = {
     userName: name,
     userEmail: email,
     userNumber: phone,
     userMsg: message,
   }
-
+  
   firebase.database().ref("users").push(userDetail);
-
-  empty = ""
-
+  
 } catch (error) {
   console.log(error);
 }
