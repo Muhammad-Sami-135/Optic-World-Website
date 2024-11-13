@@ -10,12 +10,10 @@
     background-color: #e749abb0;
 }
 
-.category{
+.category {
     color: rgba(0, 0, 0, 0.774);
 }
+
 .category:hover {
-    /* background-color: aqua; */
-    /* text-shadow: 2px 2px 2px grey; */
     color: red;
 }
-

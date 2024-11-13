@@ -10,37 +10,34 @@
     background-color: #e749abb0;
 }
 
-.category{
+.category {
     color: rgba(0, 0, 0, 0.774);
 }
+
 .category:hover {
-    /* background-color: aqua; */
-    /* text-shadow: 2px 2px 2px grey; */
     color: red;
 }
 
-
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .sliderimg {
         height: 600px;
     }
 }
 
-
-@media (min-width: 992px) and (max-width: 1199px){
-    .sliderimg{
+@media (min-width: 992px) and (max-width: 1199px) {
+    .sliderimg {
         height: 555px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
-    .sliderimg{
+@media (min-width: 768px) and (max-width: 991px) {
+    .sliderimg {
         height: 350px;
     }
 }
 
-@media (max-width: 767px){
-    .sliderimg{
+@media (max-width: 767px) {
+    .sliderimg {
         height: 250px;
     }
 }

@@ -9,8 +9,6 @@ var firebaseConfig = {
 
 var app = firebase.initializeApp(firebaseConfig);
 
-// console.log(app);
-
 function login() {
   var email = document.getElementById("email")
   var password = document.getElementById("password")
@@ -18,18 +16,14 @@ function login() {
   console.log(email.value, password.value);
 
   firebase.auth().signInWithEmailAndPassword(email.value, password.value)
-      .then(() => {
-          // The link was successfully sent. Inform the user.
-          // Save the email locally so you don't need to ask the user for it again
-          // if they open the link on the same device.
-          window.localStorage.setItem('emailForSignIn', email.value , password.value);
-          window.location.href = "./Pages/Home Page/home.html"
-          // ...
-      })
-      .catch((error) => {
-          var errorCode = error.code;
-          var errorMessage = error.message;
-          console.log(errorMessage);
-      });
+    .then(() => {
+      window.localStorage.setItem('emailForSignIn', email.value, password.value);
+      window.location.href = "./Pages/Home Page/home.html"
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      alert(errorMessage)
+    });
 
 } 

@@ -9,32 +9,35 @@
             src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
     </head>
     <body>
+
         <div class="container"
-            style="border: 2px solid black; background-color: lightblue;">
+            style="background-color: transparent;">
             <div style="display: flex; justify-content: space-between;">
-                <h2>Sign in</h2>
+                <h2>Login</h2>
                 <img src="./Images/home images/Optic world.png" alt>
             </div>
-            
-                <div class="form-group">
-                    <label class="label" for="email">Email:</label>
-                    <input style="border: 2px solid rgba(0, 0, 0, 0.459);" id="email"
-                        class="input" type="email" id="email"
-                        placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label class="label" for="password">Password:</label>
-                    <input style="border: 2px solid rgba(0, 0, 0, 0.459);" id="password"
-                        class="input" type="password"
-                        id="password" placeholder="Enter your password">
-                </div>
-                <div style="text-align: center;">
-                    <p>Don't have an account? <a href="./Pages/Sign up Page/signup.html">Sign up</a></p>
-                </div>
-                <button class="button" type="submit" onclick="login()">Sign
-                    In</button>
-            
+            <div class="form-group">
+                <label class="label" for="email">Email:</label>
+                <input style="border: 2px solid rgba(0, 0, 0, 0.459);"
+                    id="email"
+                    class="input" type="email" id="email"
+                    placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label class="label" for="password">Password:</label>
+                <input style="border: 2px solid rgba(0, 0, 0, 0.459);"
+                    id="password"
+                    class="input" type="password"
+                    id="password" placeholder="Enter your password">
+            </div>
+            <div style="text-align: center;">
+                <p>Don't have an account? <a
+                        href="./Pages/Sign up Page/signup.html">Sign up</a></p>
+            </div>
+            <button class="button" type="submit"
+                onclick="login()">Login</button>
         </div>
+
     </body>
     <script src="app.js"></script>
 </html>
